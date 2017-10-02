@@ -1,0 +1,43 @@
+*{
+  margin:0;
+}
+#header {
+  grid-area: header;
+}
+#topBtnHeader {
+  grid-area: topBtnHeader;
+}
+#gameBoard {
+  grid-area: gameBoard;
+}
+#btmBtnHeader {
+  grid-area: btmBtnHeader;
+}
+body {
+  max-width: 1920px;
+}
+#root {
+  max-width: 1920px;
+}
+.container {
+  display: grid;
+  grid-auto-rows: 100px 70px 390px 140px;
+  grid-template-columns: 1fr 693px 1fr;
+  height:100vh;
+
+}
+@media (max-width:1000px){
+  .container {
+    grid-template-columns: 1fr 600px 1fr;
+  }
+}
+@media (max-width:780px){
+  .container {
+    grid-template-columns: 1fr 90% 1fr;
+  }
+}
+@media (max-width:462px){
+  .container {
+    grid-auto-rows: 100px 90px 390px 140px;
+  }
+}

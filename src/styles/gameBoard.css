@@ -1,0 +1,17 @@
+#gameBoard {
+  padding-left: 1px;
+  background-color: black;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  overflow: hidden;
+}
+
+#cellBoard {
+  width:110%;
+  height:110%;
+  border-left: solid gray 1px;
+  border-top: solid gray 1px;
+}
+.cell:visited {
+  background-color: #D9EBBC;
+}
